@@ -20,17 +20,6 @@ func (*list) ListFileSKHandler(c echo.Context) (err error) {
 	var resp models.Response
 	var ds = helper.DriveService
 
-	// file, err := c.FormFile("file")
-	// if err != nil {
-	// 	return err
-	// }
-
-	// src, err := file.Open()
-	// if err != nil {
-	// 	return err
-	// }
-	// defer src.Close()
-
 	fID := os.Getenv("FID_SURAT_KELUAR")
 
 	listFile, err := helper.ListFile(ds, fID)
