@@ -40,6 +40,8 @@ func GetDriveService() error {
 	if err != nil {
 		fmt.Printf("Cannot create the Google Drive service: %v\n", err)
 		return err
+	} else {
+		log.Println("Initialized Google Drive service")
 	}
 
 	DriveService = service
