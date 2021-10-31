@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/alifudin-a/go-gdrive/pkg/domain/helper"
-	"github.com/alifudin-a/go-gdrive/pkg/domain/helper/models"
+	"github.com/alifudin-a/go-gdrive/pkg/domain/models"
 
 	"github.com/labstack/echo/v4"
 )
